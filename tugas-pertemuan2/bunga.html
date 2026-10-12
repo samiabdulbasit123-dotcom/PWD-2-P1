@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FROM MAHASISWA</h1>
+    <form action="/proses" method="POST">
+        <fieldset>
+            <legend>Data mahasiswa</legend>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="nama" name="nama" placeholder="Masukan nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="NPM" id="data">Npm</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="NPM" name="data" placeholder="Masukan NPM"></td>
+                </tr>
+                <tr>
+                    <td><label for="kelas">kelas</label></td>
+                    <td>:</td>
+                    <td><select name="kelas" id="kelas">
+                            <option value=" ">-</option>
+                            <option value="IFA25">IF A 2025</option>
+                            <option value="IFB25">IF B 2025</option>
+                            <option value="IFC25">IF C 2025</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>jenis kelamin</td>
+                    <td>:</td>
+                    <td><input type="radio" id="pria" name="jenis_kelamin" value="pria">
+                        <label for="pria">pria</label>
+                        <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+                        <label for="wanita">wanita</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Tempat tinggal mahasiswa</legend>
+            <table>
+                <tr>
+                    <td valign="top"><label for="alamat">Alamat</label></td>
+                    <td valign="top">:</td>
+                    <td><textarea name="alamat" id="alamat" rows="4" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="kecamata">kecamata</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="kecamata" name="kecamatan" placeholder="Masukan kecamata"></td>
+                </tr>
+                <tr>
+                    <td><label for="kabupaten">kabupaten/kotanya</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="kabupaten" id="kabupaten" placeholder="masukan kota/kabupaten"></td>
+                </tr>
+                <tr>
+                    <td><label for="provinsi">provinsi/kotanya</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="provinsi" id="provinsi" placeholder="masukan kota/provinsi"></td>
+                </tr>
+                <tr>
+                    <td><label for="kode_pos">kodePos/kotanya</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="kode_pos" id="kode_pos" placeholder="masukan kota/kode pos"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>lain - lainnya</legend>
+            <table>
+                <tr>
+                    <td valign="top">bahasa pemrograman</td>
+                    <td valign="top">:</td>
+                    <td>
+                        <input type="checkbox" name="bahasaPemrograman[]" id="C" value="C++ / C#">
+                        <label for="C">C++/ C#</label>
+
+
+                        <input type="checkbox" name="bahasaPemrograman[]" id="Java" value="Java">
+                        <label for="Java">Java</label>
+
+
+                        <input type="checkbox" name="bahasaPemrograman[]" id="Js" value="Java script">
+                        <label for="Js">Java script</label>
+
+                        <input type="checkbox" name="bahasaPemrograman[]" id="python" value="python">
+                        <label for="python">Python</label>
+
+                        <input type="checkbox" name="bahasaPemrograman[]" id="php" value="php">
+                        <label for="php">Php</label>
+
+                        <input type="checkbox" name="bahasaPemrograman[]" id="lain_nya">
+                        <label for="lain_nya">lain nya</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>kegiatan</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="kegiatan[]" id="organisasi_kemahasiswaan" value="organisasi_kemahasiswaan">
+                        <label for="organisasi_kemahasiswaan">organisasi kemahasiswaan</label>
+
+                        <input type="checkbox" name="kegiatan[]" id="organisasi_diluar_kampus" value="organisasi_diluar_kampus">
+                        <label for="organisasi_diluar_kampus">organisasi diluar kampus</label>
+
+                        <input type="checkbox" name="kegiatan[]" id="bidang_olahraga" value="bidang_olahraga">
+                        <label for="bidang_olahraga">bidang olahraga</label>
+
+                        <input type="checkbox" name="kegiatan[]" id="bidang_seni" value="bidang_seni">
+                        <label for="bidang_seni">bidang seni</label>
+
+                        <input type="checkbox" name="kegiatan[]" id="lain_nya" value="lain_nya">
+                        <label for="lain_nya">lain nya</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
