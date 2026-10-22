@@ -1,0 +1,239 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+
+
+}
+
+header .navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f0409;
+
+}
+
+header .navbar .logo {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+.menu a:hover {
+    background-color: violet;
+}
+
+.menu li a {
+    text-decoration: none;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.hero {
+    background-color: #1a1a1a;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: white;
+    column-gap: 15px;
+    row-gap: 200px;
+
+}
+
+
+.hero article {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    text-align: center;
+    border: 1px solid wheat ;
+
+}
+
+.hero aside {
+    display: flex;
+    justify-content: center;
+}
+
+.hero aside img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.hero p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    background-color: #1a1a1a;
+    border-top: 1px solid #3a3b3d;
+    padding: 50px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #f1f1f1;
+}
+
+
+footer .foot-judul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .foot-judul .judul-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+}
+
+footer .foot-judul .judul-logo a {
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+footer .foot-judul .judul-logo h3 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+footer .foot-judul p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+footer .foot-search {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .foot-search p {
+    margin: 0;
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+footer .foot-search .input-email {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    height: 42px;
+    background-color: #111827;
+    border: 1px solid #3b82f6;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+
+footer .foot-search .input-email input[type="text"]:first-child {
+    display: none;
+}
+
+
+footer .foot-search .input-email input#input-email {
+    flex: 1;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+footer .foot-search .input-email input#input-email::placeholder {
+    color: #9ca3af;
+}
+
+
+footer .foot-search .input-email p {
+    background-color: #3366cc;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px;
+}
+
+footer .foot-search .input-email p:hover {
+    background-color: #2563eb;
+}
+
+
+footer .foot-kunjungi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #2a2b2d;
+    padding-top: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .foot-kunjungi .catatan-kaki {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+
+footer .foot-kunjungi .social-links {
+    display: flex;
+    gap: 12px;
+}
+
+footer .foot-kunjungi .social-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #111827;
+    border: 1px solid #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+footer .foot-kunjungi .social-btn:hover {
+    background-color: #830000;
+    color: #ffffff;
+    border-color: #830000;
+    transform: translateY(-3px);
+}
+
+footer .foot-kunjungi .social-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
